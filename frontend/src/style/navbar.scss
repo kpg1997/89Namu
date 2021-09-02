@@ -1,0 +1,61 @@
+@import "./common.scss";
+
+* {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+
+  .link {
+    text-decoration: none;
+    color: $green;
+
+    &:hover {
+      color: lighten($green, 10%);
+    }
+  }
+  
+  .logo > img {
+    width: 85px;
+    height: 100px;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding: 8px 12px;
+    }
+  }
+
+  .menubar {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+
+    .menu {
+      flex-direction: column;
+      align-items: center; // 메뉴 너비 자체가 작아서 width를 100 줘야 바뀜
+      width: 100%
+    }
+
+    .menubar {
+      display: block;
+    }
+  }
+}

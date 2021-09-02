@@ -1,0 +1,132 @@
+@import './common.scss';
+
+.makeTreeContainer{
+    padding-top: 10vh;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color : #555555;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);
+    .imgContainer{
+        width: 1100px;
+        height: 500px;
+        border-radius: 15px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        .imgBox{
+            width: 500px;
+            border: solid green 3px;
+            border-radius: 15px;
+            height: 100%;
+            div{
+                p{
+                    padding-top: 40%;
+                    font-size: 50px;
+                }
+            }
+            .treeImg{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+    button{
+        width: 115px;
+        height: 45px;
+        font-size: 1.1rem;
+        background-color: $green;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        color: $beige;
+
+
+        &:hover {
+          background: lighten($green, 10%);
+          cursor: pointer;
+        }
+    }
+    
+    .formContainer{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 1100px;
+        padding:50px;
+
+        .addressContainer{
+            display: block;
+            width: 500px;
+
+            input,button{
+                display:inline-block;
+                vertical-align: middle;
+            }
+            .address-div{
+                .addressInput{
+                    font-size: 25px;
+                    width: 70%;
+                    height: 50px;
+                }
+
+                button{
+                    width:50px;
+                    height:auto;
+                    font-size:40px;
+                    background:none;
+                    z-index: 5;
+                    color:$green;
+                }
+            }
+        }
+
+        .infoContainer{
+            width: 500px;
+            input{
+                font-size: 20px;
+                margin-top: 5px;
+            }
+            .label-input{
+                width:60%;
+                margin:0 auto;
+                background: $green;
+                color: #ffffffff;
+                border-radius: 5px;
+                padding:10px;
+                transition: 0.5s;
+                .label-upload{
+                    font-size:35px;
+                    cursor: pointer;
+                    .icon, span{
+                        vertical-align: middle;
+                    }
+
+                }
+                .img-upload{
+                    display:none;
+                }
+
+                &:hover{
+                    background: rgb(61, 149, 3);
+                }
+            }
+
+            .input-map{
+                margin-top:15px;
+            }
+
+            button{
+                margin-top: 15px;
+            }
+        }
+    }
+}

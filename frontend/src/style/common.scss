@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+$green: #2c5814;
+$beige: #F0EDE2;
+$text: #382b22;
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
+
+$light-lime: #fafff0;
+$lime: #f9ffe9;
+$dark-lime: #ebf9c4;
+$lime-border: #a5b185;
+$lime-shadow: #f5ffe2;
+$lime9: #5c940d;
+
+body {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

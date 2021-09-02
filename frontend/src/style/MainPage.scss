@@ -1,0 +1,241 @@
+@import "./common.scss";
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Nanum+Pen+Script&display=swap');
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.intro{
+    width: 100vw;
+    height: 80vh;
+    img{
+        width: 100vw;
+    }
+    .blah_blah{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        font-family: "SBAggroB";
+        .Welcome{
+            font-size: 4rem;
+            margin-top: 10%;
+            margin-left: 25%;
+            font-weight: 800;
+            
+        }
+        .Welcome2{
+            font-size: 3rem;
+            margin-top: 1%;
+            margin-left: 25%;
+            font-weight: 800;
+        }
+    }
+    
+}
+
+.explain{
+    width: 100vw;
+    height: 30vh;
+    background-color: #f2f2f2;
+    color: #555555;
+    position: relative;
+    .left_box{
+        background-color: none;
+        width: 50%;
+        height: 100%;
+        float: left;
+
+        .left_content{
+            background-color: none;
+            width: 40%;
+            height: 100%;
+            float: left;
+            
+        }
+        .right_content{
+            background-color: none;
+            width: 60%;
+            height: 100%;
+            float: left;
+            
+        }
+    }
+    .right_box{
+        background-color: none;
+        width: 50%;
+        height: 100%;
+        float: left;
+        .left_content2{
+            background-color: none;
+            width: 60%;
+            height: 100%;
+            float: left;
+            
+        }
+        .right_content2{
+            background-color: none;
+            width: 40%;
+            height: 100%;
+            float: left;
+            
+        }
+    }
+}
+.Block_explain{
+    width: 100vw;
+    min-height: 35vh;
+    background: #f2f2f2;
+    color: #555555;
+    .Block_explain_box{
+        width: 80%;
+        margin-left: 10%;
+
+        height: 100%;
+        background-color: none;
+        position: relative;
+        .Block_explain_box3{
+            width: 100%;
+            height: 10%;
+            background: none;
+            float: left;
+
+            
+        }
+        .Block_explain_box1{
+            width: 45%;
+            height: 50%;
+            background: none;
+            float: left;
+            
+            
+            .h1-Tag{
+                font-size: 3rem;
+            }
+            .h2-Tag{
+                font-size: 2.3rem;
+            }
+
+        }
+        .Block_explain_box2{
+            width: 45%;
+            margin-left: 10%;
+            height:50%;
+            background-color: none;
+            float: left;
+        }
+    }
+}
+.Main_Slider{
+    width: 100vw;
+    height: 55vh;
+    background-color:  #82b440;
+    .second_slider{
+    width: 60%;
+    margin-left: 20%;
+    
+    .slick-prev:before {
+        opacity:  3; 
+      color: white; 
+      left: 0;
+    }
+    .slick-next:before {
+      opacity: 3;
+      color: white;
+    }
+    color: #f2f2f2;
+
+
+    .slider_title{
+        margin-top: 5%;
+        font-size: 3rem;
+         text-align: center;
+    }
+    .slider_content{
+        margin-top: 3%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .btn_link{
+
+        background-color: #82b440;
+        border: 2px solid #f2f2f2;
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        margin-top: 5vh;
+        cursor: pointer;
+        padding: 0.90em 1.2em;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,0);
+        &:hover{
+            background-color: #f2f2f2;
+            color: #82b440;
+
+        }
+    }
+}
+}
+
+.footer{
+    width: 100vw;
+    height: 85vh;
+    background-color: #222222;
+    .footer_title{
+        padding-top: 3%;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .person{
+        margin-top: 5%;
+        width: 25%;
+        float: left;
+        text-align: center;
+        color: white;
+        margin-bottom: 3%;
+        h3{
+            text-transform: uppercase;
+        }
+        p{
+            margin-top: 3%;
+        }
+        .image {
+            width: 100%;
+            display: block;
+            width: 60%;
+            margin: 0em auto 2em auto;
+            
+        }
+        
+        .image img {
+            border-radius: 50%;
+            border: 10px solid;
+            border-color: white;
+        }
+    }
+    .footer_content{
+        margin-top: 2%;
+        font-size: 1rem;
+        line-height: 180%;
+        color: #888888;
+        .footer1{
+            float: left;
+            margin-left: 20%;
+            img{
+                height: 15vh;
+            }
+        }
+        .footer2{
+            float: left;
+            a{
+
+                color:  #888888;
+            }
+        }
+    }
+}

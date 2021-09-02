@@ -1,0 +1,151 @@
+@import "./common.scss";
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.swapBox {
+  padding-top: 10vh;
+  text-align: center;
+  width: 100%;
+  font-family: 'Noto Sans JP';
+  border-radius: 10px;
+  background: $beige;
+  color: #555555;
+  height: 100%;
+  .swapping {
+    width: 80%;
+    display: inline-block;
+    border: 2px solid $lime9;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.35);
+    border-radius: 15px;
+    height: 80%;
+
+    .tree, .token {
+      width: 90%;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      border-radius: 15px;
+      text-align: right;
+      font-size: 18px;
+  
+      input {
+        width: 60%;
+        padding: 0.5rem;
+        text-align: right;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $green;
+        background: $beige;
+  
+        &:focus {
+          border-radius: 3px;
+          transition: .3s;
+        }
+      }
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      .unit {
+        margin-left: 1rem;
+      }
+
+      .toHolomi {
+        width: 66%;
+        display: inline-block;
+        border-bottom: 2px solid $green;
+      }
+    }
+  }
+
+  .tree > input {
+    margin-top: 0.8rem;
+    &:focus {
+      background: #ffffff;
+    }
+  }
+
+  .rate {
+    width: 75%;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-align: right;
+  }
+
+
+}
+
+.treeInfo{
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 15px;
+  .Swap_img{
+    width: 60%;
+    height: 100%;
+    box-shadow: 0 0 5px 1px gray;
+    float: left;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Swap_context{
+    padding-top: 1%;
+    width: 40%;
+    height: 80%;
+    float: left;
+    text-align: left;
+    line-height: 200%;
+    font-size: 1.1rem;
+    padding-left: 1.2%;
+  }
+  .Swap_btn{
+    width: 40%;
+    height: 20%;
+    float: right;
+    padding-top: 3.5%;
+    button {
+
+      background: $green;
+      color: $beige;
+      border: none;
+      border-radius: 10px;
+      position: relative;
+      height: 50px;
+      font-size: 1.6em;
+      padding: 0 2em;
+      cursor: pointer;
+      transition: 800ms ease all;
+      outline: none;
+        
+      &:hover{
+          background: $beige;
+          color: $green;
+      }
+  
+      &::before, &::after {
+          content:'';
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 2px;
+          width: 0;
+          background: $green;
+          transition: 400ms ease all;
+      }
+  
+      &::after {
+          right: inherit;
+          top: inherit;
+          left: 0;
+          bottom: 0;
+      }
+  
+      &:hover::before, &:hover::after {
+          width: 100%;
+          transition: 800ms ease all;
+      } 
+    }
+  }
+
+}

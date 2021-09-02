@@ -1,0 +1,101 @@
+@import "./common.scss";
+
+.buytoken_gb{
+    width: 100vw;
+    height: 100vh;
+    background-color: $beige;
+    color : #555555;
+}
+.buyingTokenBox {
+    padding-top: 10vh;
+    text-align: center;
+    width: 700px;
+    font-family: 'Noto Sans JP';
+    border-radius: 10px;
+    margin: auto;
+
+    h1 {
+        padding-bottom: 2rem;
+        color: $green;
+    }
+
+    .btton {
+        width: 80%;
+        display: inline-block;
+        padding: 1rem;
+
+        button {
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            padding: 10px 50px 10px 50px;
+            margin: 1rem;
+            background: $lime9;
+            color: #ffffff;
+            font-family: 'Noto Sans JP';
+            font-size: 14px;
+            box-shadow: 0 3px 5px black;
+
+            &:hover {
+                background: darken($lime9, 5%);
+                cursor: pointer;
+                transform: translateY(-6px);
+                transition: 0.4s; 
+            }
+        }
+    }
+
+    .buying {
+        width: 100%;
+        display: inline-block;
+        border: 3px solid $lime9;
+        border-radius: 15px;
+        box-shadow: 0 3px 5px $lime-border;
+        
+        .ether {
+            width: 50%;
+            display: inline-block;
+            padding: 1rem;
+            
+            input {
+                width: 80%;
+                padding: 0.5rem;
+                margin-top: 1rem;
+                text-align: right;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $lime9;
+                background: $beige;
+                font-size: 25px;
+            }
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+
+        .token {
+            width: 50%;
+            padding: 1rem;
+            display: inline-block;
+            border-radius: 15px;
+            text-align: right;
+            font-size: 18px;
+        
+            .unit {
+                margin-right: 1rem;
+            }
+
+            .toHolomi {
+                width: 80%;
+                display: inline-block;
+                border-bottom: 2px solid $lime9;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buyingTokenBox {
+        width: 100%;
+    }
+}
