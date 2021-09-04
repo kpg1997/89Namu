@@ -5,7 +5,7 @@ import "./Holomi.sol";
 import "./TreeFactory.sol";
 
 contract PalguNamu {
-    address payable account = payable(0xdD870fA1b7C4700F2BD7f44238821C26f7392148);
+    address payable account = payable(0xdD870fA1b7C4700F2BD7f44238821C26f7392148);  //owner 지갑 주소
     address private treefactoryAddress;
     address private holomiAddress;
     address private owner;
@@ -28,7 +28,7 @@ contract PalguNamu {
 
     
     event Buying(address indexed buyer, string productName, uint amount);
-   
+
     event Deposit(address indexed user, uint etherAmount, uint timeStart, uint depositPeriod);
     event Withdraw(address indexed user, uint etherAmount, uint fee, uint interest);
     event BuyToken(address indexed user, uint etherAmount, uint buyTime, uint tokenAmount);
